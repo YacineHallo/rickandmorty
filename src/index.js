@@ -7,15 +7,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //import componenten
 import Navigatie from "./componenten/Navigatie/navigatie";
-
 import Footer from "./componenten/Footer/footer";
 import Vervang from "./componenten/Detailpaginas/Vervangingingspag";
 import Main from "./componenten/main";
+import ApiRickMorty from "./assets/Data/apirickmorty";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Navigatie />
+    <ApiRickMorty />
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/vervang" element={<Vervang />} />
